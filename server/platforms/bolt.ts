@@ -1,6 +1,6 @@
-import { toFeedItem } from "../../shared/classify";
-import type { FeedItem, PlatformResult } from "../../shared/types";
-import { fetchText, uniqueBy } from "../http";
+import { toFeedItem } from "../../shared/classify.js";
+import type { FeedItem, PlatformResult } from "../../shared/types.js";
+import { fetchText, uniqueBy } from "../http.js";
 
 const CANDIDATES = [
   "https://bolt.new/~/discover",

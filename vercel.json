@@ -1,3 +1,8 @@
 {
-  "rewrites": [{ "source": "/api/feed", "destination": "/api/feed" }]
+  "functions": {
+    "api/feed.ts": {
+      "maxDuration": 30,
+      "includeFiles": "{server,shared}/**"
+    }
+  }
 }

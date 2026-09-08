@@ -1,6 +1,6 @@
-import { toFeedItem } from "../../shared/classify";
-import type { FeedItem } from "../../shared/types";
-import { fetchJson } from "../http";
+import { toFeedItem } from "../../shared/classify.js";
+import type { FeedItem } from "../../shared/types.js";
+import { fetchJson } from "../http.js";
 
 type TopicList = {
   topic_list?: {

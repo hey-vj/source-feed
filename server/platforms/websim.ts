@@ -1,6 +1,6 @@
-import { toFeedItem } from "../../shared/classify";
-import type { FeedItem, PlatformResult } from "../../shared/types";
-import { fetchJson, uniqueBy } from "../http";
+import { toFeedItem } from "../../shared/classify.js";
+import type { FeedItem, PlatformResult } from "../../shared/types.js";
+import { fetchJson, uniqueBy } from "../http.js";
 
 type WebsimSite = {
   id?: string;

@@ -1,11 +1,11 @@
-import type { FeedItem, FeedResponse, PlatformId, PlatformResult } from "../shared/types";
-import { fetchBolt } from "./platforms/bolt";
-import { fetchNetlify, fetchVercel } from "./platforms/hosts";
-import { fetchLovable } from "./platforms/lovable";
-import { fetchV0 } from "./platforms/v0";
-import { fetchVercelCommunity } from "./platforms/vercel-community";
-import { fetchWebsim } from "./platforms/websim";
-import { uniqueBy } from "./http";
+import type { FeedItem, FeedResponse, PlatformId, PlatformResult } from "../shared/types.js";
+import { fetchBolt } from "./platforms/bolt.js";
+import { fetchNetlify, fetchVercel } from "./platforms/hosts.js";
+import { fetchLovable } from "./platforms/lovable.js";
+import { fetchV0 } from "./platforms/v0.js";
+import { fetchVercelCommunity } from "./platforms/vercel-community.js";
+import { fetchWebsim } from "./platforms/websim.js";
+import { uniqueBy } from "./http.js";
 
 export const CACHE_TTL_MS = 30 * 60 * 1000;
 

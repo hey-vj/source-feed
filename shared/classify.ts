@@ -1,4 +1,4 @@
-import type { Classification, FeedItem } from "./types";
+import type { Classification, FeedItem } from "./types.js";
 
 const INCLUDE: Array<{ label: Classification; terms: string[] }> = [
   { label: "CRM", terms: ["crm", "pipeline", "leads", "contacts", "sales ops", "deal desk"] },

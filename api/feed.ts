@@ -1,5 +1,5 @@
 import type { IncomingMessage, ServerResponse } from "node:http";
-import { getFeed } from "../server/feed";
+import { getFeed } from "../server/feed.js";
 
 export default async function handler(req: IncomingMessage, res: ServerResponse) {
   const url = new URL(req.url ?? "/", "http://source.local");

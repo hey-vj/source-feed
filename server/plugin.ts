@@ -1,6 +1,6 @@
 import type { IncomingMessage, ServerResponse } from "node:http";
 import type { Connect, Plugin } from "vite";
-import { getFeed } from "./feed";
+import { getFeed } from "./feed.js";
 
 async function writeFeed(req: IncomingMessage, res: ServerResponse) {
   const url = new URL(req.url ?? "/", "http://source.local");
