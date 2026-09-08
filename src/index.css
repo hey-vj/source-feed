@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+  --bg: #08080a;
+  --bg-soft: #101014;
+  --line: rgba(255, 255, 255, 0.07);
+  --text: #f3f3f5;
+  --muted: #8d8d96;
+  --accent: #7dffb3;
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(1200px 500px at 50% -200px, rgba(125, 255, 179, 0.08), transparent 60%),
+    var(--bg);
+}
+
+button,
+input {
+  font: inherit;
+}
+
+::selection {
+  background: rgba(125, 255, 179, 0.24);
+}
+
+.feed-masonry {
+  column-count: 1;
+  column-gap: 14px;
+}
+
+@media (min-width: 720px) {
+  .feed-masonry {
+    column-count: 2;
+  }
+}
+
+@media (min-width: 1080px) {
+  .feed-masonry {
+    column-count: 3;
+  }
+}
+
+@media (min-width: 1440px) {
+  .feed-masonry {
+    column-count: 4;
+  }
+}
+
+.feed-card {
+  break-inside: avoid;
+  margin-bottom: 14px;
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
